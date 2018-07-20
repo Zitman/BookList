@@ -24,7 +24,7 @@ namespace BookList
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DesktopConnection")));
+                options.UseSqlServer(Configuration.GetConnectionString("LaptopConnection")));
             services.AddMvc();
         }
 
